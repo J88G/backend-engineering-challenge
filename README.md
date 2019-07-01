@@ -1,6 +1,53 @@
 # Backend Engineering Challenge
 
 
+## Run it
+```bash
+pip install -r requirements.txt 
+unbabel_cli --input_file example.json --window_size 10
+```
+
+
+### Commands available:
+
+#### Help
+```bash
+unbabel_cli --help
+```
+
+#### Version
+```bash
+unbabel_cli --version
+```
+
+#### Default command with required fields
+```bash
+unbabel_cli --input_file example.json --window_size 10 
+```
+
+
+#### Choose an output from: json[default], yaml or table
+```bash
+unbabel_cli --input_file example.json --window_size 20 --output table
+unbabel_cli --input_file example.json --window_size 20 --output yaml
+unbabel_cli --input_file example.json --window_size 20 --output json
+```
+
+
+#### Export the result 
+```bash
+unbabel_cli --input_file example.json --window_size 20 --output yaml > results.json
+```
+
+
+## Tests
+```bash
+cd tests
+python -m pytest test_app.py
+```
+
+## Introduction
+
 Welcome to our Engineering Challenge repository 🖖
 
 If you found this repository it probably means that you are participating in our recruitment process. Thank you for your time and energy. If that's not the case please take a look at our [openings](https://unbabel.com/careers/) and apply!
